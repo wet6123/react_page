@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  text-align: center;
+  color: aliceblue;
+
+  /* width: 1080px; */
+  margin: 75px auto 0 auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+}
+
+p {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+img {
+  margin-top: 100px;
+  max-width: 100%;
+}
+
+#stillImg > img {
+  padding-bottom: 100px;
+  max-width: 90%;
+  object-fit: cover;
+}
+
+#synop {
+  font-size: 30px;
+  max-width: 80%;
+  text-align: center;
+}
