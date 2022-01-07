@@ -1,9 +1,16 @@
+/* tab */
+:root {
+  --before: gray;
+  --after: blue;
+}
+
 body {
   background-color: black;
   text-align: center;
   color: aliceblue;
 
   /* width: 1080px; */
+  width: 100%;
   margin: 75px auto 0 auto;
   overflow-x: hidden;
   -ms-overflow-style: none;
@@ -16,7 +23,7 @@ body::-webkit-scrollbar {
 
 p {
   font-size: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 img {
@@ -30,8 +37,53 @@ img {
   object-fit: cover;
 }
 
-#synop {
+.letters {
+  margin-top: 200px;
+  margin-bottom: 600px;
+}
+
+.synop {
   font-size: 30px;
-  max-width: 80%;
+  max-width: 100%;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.bigLetter {
+  margin-top: 200px;
+  margin-bottom: 600px;
+}
+
+.tabMenu {
+  font-weight: bold;
+  margin-bottom: 600px;
+  font-size: 30px;
+}
+
+.tabMenu > button {
+  font-weight: bold;
+  color: var(--before);
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  margin: 20px 15px;
+}
+
+.tabMenu > button:hover {
+  animation: changeColor 1s;
+  background: linear-gradient(to right top, blue, red);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+@keyframes changeColor {
+  from {
+    color: var(--before);
+  }
+  to {
+    background: linear-gradient(to right top, blue, red);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
 }
